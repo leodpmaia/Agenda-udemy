@@ -1,0 +1,17 @@
+"pt-BR":
+  messages:
+    confirm: Tem certeza?
+    listing: Listando
+    name: Nome
+    rmk: Obs
+    kind: Tipo de Contato
+    email: E-mail
+    phone: Telefone
+    street: Rua
+    city: Cidade
+    state: Estado
+    description: Descrição
+    errors: Ocorreram erros!!
+    created: Item criado com sucesso!
+    updated: Item atualizado com sucesso!
+    destroyed: Item excluído com sucesso!

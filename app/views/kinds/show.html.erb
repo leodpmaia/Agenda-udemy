@@ -1,0 +1,12 @@
+<div class='basic-grey'>
+  <h1> <%= @kind.model_name.human %> </h1>
+  <p id="notice"><%= notice %></p>
+  
+  <p>
+    <strong>Description:</strong>
+    <%= @kind.description %>
+  </p>
+  
+  <%= link_to t("buttons.edit"), edit_kind_path(@kind), class: "button" %> |
+  <%= link_to t("buttons.back"), kinds_path, class: "button" %>
+</div>

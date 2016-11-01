@@ -1,0 +1,40 @@
+<div class='basic-grey'>
+  <p>
+  <script>
+    $.notify("<%= notice %>","success")
+  </script>
+  </p>
+  
+  <h1><%= "#{t("messages.listing")} #{@kinds.model.model_name.human(count: @kinds.count )}" %></h1>
+  
+  <table>
+    <thead>
+      <tr>
+        <th><%= @kinds.human_attribute_name("description") %></th>
+        <th colspan="2"></th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% @kinds.each do |kind| %>
+        <tr style="background: <%= cycle('#F7F7F7', '#FFF')%>">
+          <td><%= kind.description %></td>
+          <td><%= link_to t("buttons.edit"), edit_kind_path(kind), class: 'btn btn-default btn-xs' %></td>
+          <td><%= link_to t("buttons.destroy"), kind, method: :delete, data: { confirm: t("messages.confirm") }, class: 'btn btn-default btn-xs' %></td>
+
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  
+  <br>
+  
+  <%= paginate @kinds %>
+  
+  <br>
+  
+  <br>
+  
+  <%= link_to t("buttons.new"), new_kind_path, class: 'btn btn btn-primary' %>
+  <%= link_to t("buttons.back"), root_path, class: 'btn btn btn-success' %>
+</div>
