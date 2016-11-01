@@ -89,6 +89,7 @@ GEM
     nokogiri (1.6.8)
       mini_portile2 (~> 2.1.0)
       pkg-config (~> 1.1.7)
+    pg (0.19.0)
     pkg-config (1.1.7)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -125,6 +126,11 @@ GEM
     rails-i18n (4.0.9)
       i18n (~> 0.7)
       railties (~> 4.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (4.2.5)
       actionpack (= 4.2.5)
       activesupport (= 4.2.5)
@@ -184,11 +190,13 @@ DEPENDENCIES
   kaminari
   kaminari-i18n
   lerolero_generator
+  pg
   pry-rails
   rails (= 4.2.5)
   rails-assets-bootstrap!
   rails-assets-notifyjs!
   rails-i18n (~> 4.0.0)
+  rails_12factor
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
